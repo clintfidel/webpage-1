@@ -9,6 +9,7 @@ ul, nav {
 body {
     font: normal 16px "Aria"l,sans-serif;
     color: #555;
+    text-align: center;
     --pad:3;
     --margin:5;
 }
@@ -35,4 +36,7 @@ a:hover {
     border: 6px solid;
     border-color: #3498db;
     border-radius: 50%;
+}
+hr {
+    
 }
