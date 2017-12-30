@@ -1,3 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+
+ul, nav {
+    list-style: none;
+}
+
 body {
-    background-color: #7f8c8d;
+    font: normal 16px "Aria"l,sans-serif;
+    color: #555;
+    --pad:3;
+    --margin:5;
+}
+a {
+    text-decoration: none;
+    color:inherit;
+    cursor: pointer;
+    opacity: 0.7;
+}
+a:hover {
+    opacity: 1;
+
+}
+.round-img {
+    width: 200px;
+    height:200px;
+    border: 6px solid;
+    border-color: #3498db;
+    border-radius: 50%;
+}
+.round {
+    width: 170px;
+    height:170px;
+    border: 6px solid;
+    border-color: #3498db;
+    border-radius: 50%;
 }
