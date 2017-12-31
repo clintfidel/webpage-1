@@ -14,7 +14,7 @@ body {
 }
 
 header {
-    
+    font-weight: bold;
     color: #fff;
     text-align: left;
     background-color: #8c9394;
@@ -97,7 +97,7 @@ section {
 section p {
     text-align: center;
     width: 100%;
-    max-width: 800;
+    max-width: 1700px;
     line-height: 1.5rem;
     vertical-align:text-top; 
 }
