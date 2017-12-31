@@ -127,8 +127,16 @@ section {
 section p {
     text-align: center;
     width: 100%;
-    max-width: 1500px;
     line-height: 1.5rem;
+}
+#read p {
+    padding-top: calc(var(--pad) * 2);
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -moz-column-gap: calc(var(--margin) * 4);
+    -webkit-column-gap: calc(var(--margin) * 4);
+    column-gap: calc(var(--margin) * 4);
 }
 
 footer {
@@ -172,9 +180,24 @@ footer {
         max-width: 320px;
         text-align: center;
     }
+    #read p {
+        padding-top: calc(var(--pad) * 2);
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+
     .contact-me {
         flex-direction: column
 
     }
    
+}
+@media screen and (max-width:1200px) {
+    #read p {
+        padding-top: calc(var(--pad) * 2);
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
 }
