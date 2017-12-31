@@ -1,18 +1,58 @@
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: #3a4142;
+    font: normal 16px "Aria"l,sans-serif;
+    color: #555;
+    text-align: center;
+    --pad:3px;
+    --margin:5px;
+}
+
+header {
+    
+    color: #fff;
+    text-align: left;
+    background-color: #8c9394;
+    padding-top: calc(var(--pad) * 3);
+    padding-bottom: calc(var(--pad) * 3);
+    padding-left: cal(var(--pad) * 4);
 }
 
 ul, nav {
     list-style: none;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    width: 100%;
+    top: 0;
+    padding-top: calc(var(--pad) * 3);
+    padding-bottom: calc(var(--pad) * 3);
+    overflow: hidden;
 }
 
-body {
-    font: normal 16px "Aria"l,sans-serif;
-    color: #555;
-    text-align: center;
-    --pad:3;
-    --margin:5;
+nav ul {
+    -webkit-column-count: 5;
+    -moz-column-count: 5;
+    column-count: 5;
+    -moz-column-gap: 5px;
+    -webkit-column-gap: 5px;
+    column-gap: 5px;
+    margin: 0 auto;
+    background-color: #8c9394;
+    
 }
+
+#Hero {
+    color: white;
+    width: 100%;
+    background-image: radial-gradient(circle,#3a4142,#8c9394), url("../t-images/background.jpeg"); 
+}
+
 a {
     text-decoration: none;
     color:inherit;
@@ -23,6 +63,7 @@ a:hover {
     opacity: 1;
 
 }
+
 .round-img {
     width: 200px;
     height:200px;
@@ -30,6 +71,7 @@ a:hover {
     border-color: #3498db;
     border-radius: 50%;
 }
+
 .round {
     width: 170px;
     height:170px;
@@ -37,6 +79,39 @@ a:hover {
     border-color: #3498db;
     border-radius: 50%;
 }
+
 hr {
+    width: 200px;
+    height: 3px;
+    background-color: #3498db;
+    border: 0;
+    margin: calc(var(--margin) * 8) auto;
+}
+
+section {
+    color: white;
+    background-color: #3a4142;
+    padding: calc(var(--pad) * 20) calc(var(--pad) * 33);
+}
+
+section p {
+    text-align: center;
+    width: 100%;
+    max-width: 800;
+    line-height: 1.5rem;
+    vertical-align:text-top; 
+}
+
+footer {
+    background-color: #8c9394;
+    margin-bottom: calc(var(--margin) * 2);
+    width: 100%;
+    color: #fff;
+}
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 10px;
     
 }
