@@ -6,7 +6,7 @@
 
 body {
     background-color: #3a4142;
-    font: normal 16px "Aria"l,sans-serif;
+    font: normal 16rem "Aria"l,sans-serif;
     color: #555;
     text-align: center;
     --pad:3px;
@@ -21,6 +21,8 @@ header {
     padding-top: calc(var(--pad) * 3);
     padding-bottom: calc(var(--pad) * 3);
     padding-left: cal(var(--pad) * 4);
+    margin-bottom: calc(var(--pad) * 3);
+    
 }
 
 ul, nav {
@@ -50,7 +52,33 @@ nav ul {
 #Hero {
     color: white;
     width: 100%;
-    background-image: radial-gradient(circle,#3a4142,#8c9394), url("../t-images/background.jpeg"); 
+    background-image: url("../t-images/background.jpeg"); 
+}
+
+#image-box {
+    background: radial-gradient(circle,rgb(58, 65, 66)  15%,rgba(140, 147, 148, .5));
+    margin-top: -192px;
+    width: 100%;
+    height: 190px;
+}
+
+#about {
+    background-color:linear-gradient(top, rgb(77, 96, 105),rgb(60, 80, 90));
+}
+
+#illustrations {
+    background-color: rgb(44, 52, 56);
+}
+
+.container ul > li {
+    display: inline-block;
+    padding: calc(var(--pad) * 5);
+   
+}
+.container ul > li > img {
+   width: 250px;
+   height: 250px;
+   
 }
 
 a {
@@ -95,9 +123,9 @@ section {
 }
 
 section p {
-    text-align: center;
+    text-align: left;
     width: 100%;
-    max-width: 1700px;
+    max-width: 1500px;
     line-height: 1.5rem;
     vertical-align:text-top; 
 }
@@ -106,12 +134,33 @@ footer {
     background-color: #8c9394;
     margin-bottom: calc(var(--margin) * 2);
     width: 100%;
-    color: #fff;
+    color: #FFF;
+    text-align: center
 }
-footer ul {
+
+.contact-me {
+    font: 20px solid;
+    color: #FFF;
+    max-width: 1000px;
+    margin: 0 auto;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border: 10px;
+    justify-content: space-between; 
     
+}
+
+.contact-me > a:hover {
+    font-size: 20px !important;
+}
+
+.contact-me a {
+    display: block;
+    border: 2px solid #FFF;
+    text-align: center;
+    flex: 1;
+}
+
+@media screen and (max-width:450px){
+    section {
+
+    }
 }
