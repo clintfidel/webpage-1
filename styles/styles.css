@@ -37,8 +37,10 @@ ul, nav {
     overflow: hidden;
 }
 
-nav ul {
-    -webkit-column-count: 5;
+nav ul li {
+    display: inline;
+    padding: 0 2%;
+    /* -webkit-column-count: 5;
     -moz-column-count: 5;
     column-count: 5;
     -moz-column-gap: 5px;
@@ -46,7 +48,7 @@ nav ul {
     column-gap: 5px;
     margin: 0 auto;
     background-color: #8c9394;
-    
+     */
 }
 
 #Hero {
@@ -123,11 +125,10 @@ section {
 }
 
 section p {
-    text-align: left;
+    text-align: center;
     width: 100%;
     max-width: 1500px;
     line-height: 1.5rem;
-    vertical-align:text-top; 
 }
 
 footer {
@@ -161,6 +162,19 @@ footer {
 
 @media screen and (max-width:450px){
     section {
+        padding: calc(var(--pad) * 4);
+        margin: 0; 
+    }
+
+    section p {
+        padding: 0;
+        margin: auto;
+        max-width: 320px;
+        text-align: center;
+    }
+    .contact-me {
+        flex-direction: column
 
     }
+   
 }
