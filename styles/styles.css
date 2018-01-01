@@ -9,6 +9,7 @@ body {
     font: normal 16rem "Aria"l,sans-serif;
     color: #555;
     text-align: center;
+    font-size: 16px;
     --pad:3px;
     --margin:5px;
 }
@@ -23,6 +24,14 @@ header {
     padding-left: cal(var(--pad) * 4);
     margin-bottom: calc(var(--pad) * 3);
     
+}
+h3, h2  {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+#chapters a,h1 {
+    font-weight: bold;
 }
 
 ul, nav {
